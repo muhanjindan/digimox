@@ -85,7 +85,6 @@ function App() {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="grid place-content-center">
-            <img src='src/assets/Digimon-Logo-Transparent.png' className='translate-x-23 w-40 h-auto'/>
             <p className="text-gray-600 text-center">
               explore digimon world find your favorite digimon
             </p>
