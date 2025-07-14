@@ -101,7 +101,7 @@ function App() {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
             <Input
               type="text"
-              placeholder="Cari Digimon..."
+              placeholder="search Digimon..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10"
@@ -114,7 +114,7 @@ function App() {
                 <SelectValue placeholder="Filter by Level" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">Semua Level</SelectItem>
+                <SelectItem value="all">All Level</SelectItem>
                 {uniqueLevels.map(level => (
                   <SelectItem key={level} value={level}>
                     {level}
@@ -130,7 +130,7 @@ function App() {
           <div className="flex justify-center items-center py-20">
             <div className="text-center">
               <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-blue-600" />
-              <p className="text-gray-600">Memuat data Digimon...</p>
+              <p className="text-gray-600">load Digimon data...</p>
             </div>
           </div>
         )}
@@ -139,7 +139,7 @@ function App() {
         {!loading && (
           <div className="mb-6">
             <p className="text-gray-600">
-              Menampilkan {filteredDigimons.length} dari {digimons.length} Digimon
+             Retrieved  {filteredDigimons.length} from {digimons.length} Digimon
             </p>
           </div>
         )}
@@ -160,10 +160,10 @@ function App() {
               <Search className="h-16 w-16 mx-auto" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Tidak ada Digimon ditemukan
+              no digimon has found
             </h3>
             <p className="text-gray-600 mb-4">
-              Coba ubah kata kunci pencarian atau filter level
+              Try changing the search keywords or filter level
             </p>
             <Button
               onClick={() => {
@@ -183,7 +183,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
             <p>Data dari <a href="https://digimon-api.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Digimon API</a></p>
-            <p className="mt-2 text-sm">Dibuat dengan ❤️ menggunakan React dan Tailwind CSS</p>
+            <p className="mt-2 text-sm">make with ❤️ use React dan Tailwind CSS</p>
           </div>
         </div>
       </footer>
